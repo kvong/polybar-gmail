@@ -7,8 +7,8 @@ from google.auth.transport.requests import Request
 
 SCOPE = 'https://www.googleapis.com/auth/gmail.labels'
 DIR = Path(__file__).resolve().parent
-CLIENT_SECRETS_PATH = Path(DIR, 'client_secrets.json')
-CREDENTIALS_PATH = Path(DIR, 'credentials.json')
+CLIENT_SECRETS_PATH = str(Path(DIR, 'client_secrets.json'))
+CREDENTIALS_PATH = str(Path(DIR, 'credentials.json'))
 
 if Path(CREDENTIALS_PATH).is_file():
     creds = Credentials.from_authorized_user_file(CREDENTIALS_PATH)
