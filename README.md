@@ -7,7 +7,7 @@ A [Polybar](https://github.com/jaagr/polybar) module to show unread messages fro
 ## Dependencies
 
 ```sh
-pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib pathlib
 # or use poetry
 ```
 
